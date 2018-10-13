@@ -2,11 +2,11 @@
 
 The purpose of this tutorial is to provide you with some basic commands that will allow you to: 
 
-- 1 log onto a remote computer (e.g. "the cluster")
-- 2 navigate to different locations on that computer
-- 3 create new directory and files in that directory
-- 4 edit files
-- 5 execute files (scripts) from the command line
+- 1 - log onto a remote computer (e.g. "the cluster")
+- 2 - navigate to different locations on that computer
+- 3 - create new directories and files on that directory
+- 4 - edit files
+- 5 - execute files (scripts) from the command line
 
 
 ### 1. Logging on to a remote computer
@@ -87,7 +87,36 @@ Press return two more times. You should now be on the fifth line of your program
 echo $my_output
 ```
 
-Note that to access the value associated with a variable in bash, we need to add a *$* in front of the variable name.
+Note that to access the value associated with a variable in bash, we need to add a **$** in front of the variable name.
+
+Your file should now look like this:
+```bash
+#!/bin/bash
+
+my_output="Hello Word!"
+
+echo $my_output
+```
 
 Okay, lets save our new program and exit the **vim** editor. First hit the **esc** button. This takes us out of the *--insert* mode. Now type `:wq` and then hit **return**. This tells **vim** to write the changes we've made to the file and quit the editor.
  
+
+### 5. Executing programs / scripts from the command line.
+
+Now that you've created your first bash program, you'll want to run that program. First, check that you're still in the **my_tutorial/** directory and that this directory now contains your program (hint: you can do this using the **pwd** and **ls** commands you learned above).
+
+We first need to tell the computer that this file we just created is a program that should have the permission to *execute* as a program when we call it. To do this we use the built-in **chmod** command. The syntax for running **chmod** to make a file executable is:
+
+```bash
+chomd -x <file_name>
+```
+
+Type `chmod -x my_first_program.sh` on your command line and hit **return**. You should now be able to run your program. To run your program type:
+
+```bash
+./my_first_program.sh
+```
+
+You should have seen some text be written to your screen. If the text reads "Hello World!" (without the quotes), you've successfully written your first (albeit very short) program in bash!
+
+
