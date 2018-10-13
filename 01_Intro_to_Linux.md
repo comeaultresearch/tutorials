@@ -15,11 +15,15 @@ First you need to open an application that will allow you to connect to a comput
 ### Getting started
 
 Print the directory that you are currently working in: 
-'<pwd>'
+```bash
+pwd
+```
 
 The above command will give you the **path** to your current directory. This is the location on the computer where other commands will be executed.
 
 For example, lets run the command to make a new directory (can be thought of like a folder on your desktop, for example):
-'<mkdir my_tutorial>'
+```bash
+mkdir my_tutorial
+```
 
 The *mkdir* command needs to be followed by a string. In the above example, a new directory will be created in your current working directory called "my_tutorial".
