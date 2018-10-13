@@ -108,7 +108,7 @@ Now that you've created your first bash program, you'll want to run that program
 We first need to tell the computer that this file we just created is a program that should have the permission to *execute* as a program when we call it. To do this we use the built-in **chmod** command. The syntax for running **chmod** to make a file executable is:
 
 ```bash
-chomd -x <file_name>
+chmod -x <file_name>
 ```
 
 Type `chmod -x my_first_program.sh` on your command line and hit **return**. You should now be able to run your program. To run your program type:
